@@ -19,6 +19,14 @@
      <link rel="stylesheet" href="style.css">
      
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .manrope{
+        font-family: "Manrope", 'sans-serif';
+      }
+      .containern{
+        width: 90%;
+      }
+    </style>
     <script>
       tailwind.config = {
         theme: {
@@ -29,9 +37,7 @@
               sColor:'rgba(171, 239, 95, 0.5);',
               bColor: 'rgb(171, 239, 95)',
             },
-            'font-family':{
-                manrope: ["Manrope", 'sans-serif']
-            }
+            
           }
         }
       }
@@ -41,7 +47,7 @@
 <body class="bg-gray-200 manrope">
     <header class="bg-white">
       <nav class="mx-auto">
-        <div class="navbar container mx-auto px-4 py-2 flex items-center justify-between">
+        <div class="navbar containern mx-auto px-4 py-2 flex items-center justify-between">
           <!-- Logo -->
           <a class="text-3xl font-bold flex items-center">
             <i class="fa-solid fa-arrow-right -rotate-45 bg-primaryColor p-1 rounded-full"></i>
@@ -90,12 +96,12 @@
         
         
       </nav>
-      <div class="mt-4 py-6">
-        <div class="container">
+      <div class=" hero-section mt-4 py-6">
+        <div class="containern mx-auto">
           <img class="mx-auto" src="./assets/banner.png" alt="">
           <div class="hero-info mx-auto text-center space-y-4">
-            <h1 class="text-6xl font-bold">A barn house of this design has a <br>striking appearance</h1>
-            <p class="text-1 w-3/6 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <h1 class="text-4xl lg:text-6xl font-bold">A barn house of this design has a <br>striking appearance</h1>
+            <p class="text-1 w-4/6 lg:w-3/6 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
             <button class="btn bg-sColor border-1 border-bColor rounded-full px-8 font-bold">View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-primaryColor p-1 rounded-full"></i></button>
           </div>
         </div>
@@ -103,8 +109,39 @@
     </header>
 
     <main>
-      <section id="about">
-        
+      <section id="about" class="py-12 relative">
+        <img class="pl-6 mb-3" src="./assets/Vector.png" alt="">
+        <div class="containern mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div class="text-area mx-auto">
+            <div class="mb-5">
+              
+              <button class="btn bg-white rounded-full px-4 py-1 font-bold"><i class="fa-solid fa-arrow-right"></i>View Details</button>
+            </div>
+            <h2 class="text-4xl font-extrabold mb-6">We design thoughtful, <br> liveable spaces</h2>
+            <p class="mb-4">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.
+            </p>
+            <!-- boxs -->
+            <div class="a-box bg-white rounded-md flex py-4 px-5 space-x-4 mb-5">
+              <img src="./assets/commercial.png" alt="">
+              <div class="space-y-2">
+                <h5 class="font-bold block">Commercial</h5>
+              <p class="w-5/6">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+            <div class="a-box bg-white rounded-md flex py-4 px-5 space-x-4">
+              <img class="" src="./assets/residential.png" alt="">
+              <div class="space-y-2">
+                <h5 class="font-bold block">Residensial</h5>
+              <p class="w-5/6">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+          </div>
+          <!-- image box -->
+          <div class="img-a mx-auto">
+            <img class="w-auto lg:w-full" src="./assets/Rectangle.png" alt="">
+          </div>
+        </div>
       </section>
     </main>
     
