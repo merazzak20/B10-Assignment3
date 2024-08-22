@@ -26,6 +26,8 @@
             colors: {
               clifford: '#da373d',
               primaryColor: '#ABEF5F',
+              sColor:'rgba(171, 239, 95, 0.5);',
+              bColor: 'rgb(171, 239, 95)',
             },
             'font-family':{
                 manrope: ["Manrope", 'sans-serif']
@@ -37,7 +39,7 @@
 
 </head>
 <body class="bg-gray-200 manrope">
-    <header>
+    <header class="bg-white">
       <nav class="mx-auto">
         <div class="navbar container mx-auto px-4 py-2 flex items-center justify-between">
           <!-- Logo -->
@@ -88,7 +90,23 @@
         
         
       </nav>
+      <div class="mt-4 py-6">
+        <div class="container">
+          <img class="mx-auto" src="./assets/banner.png" alt="">
+          <div class="hero-info mx-auto text-center space-y-4">
+            <h1 class="text-6xl font-bold">A barn house of this design has a <br>striking appearance</h1>
+            <p class="text-1 w-3/6 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <button class="btn bg-sColor border-1 border-bColor rounded-full px-8 font-bold">View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-primaryColor p-1 rounded-full"></i></button>
+          </div>
+        </div>
+      </div>
     </header>
+
+    <main>
+      <section id="about">
+        
+      </section>
+    </main>
     
 </body>
 </html>
