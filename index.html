@@ -36,6 +36,7 @@
               primaryColor: '#ABEF5F',
               sColor:'rgba(171, 239, 95, 0.5);',
               bColor: 'rgb(171, 239, 95)',
+              fColor: '#1C1C1C',
             },
             
           }
@@ -67,11 +68,11 @@
         
           <!-- Icons and Dropdown for Mobile -->
           <div class="flex items-center space-x-4">
-            <div class="hidden md:flex space-x-2 invisible lg:visible">
+            <div class="hidden md:flex space-x-2 invisible md:visible">
               <a class="bg-white p-2 rounded-full" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
               <a class="bg-white p-2 rounded-full" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
-            <a class="hidden md:flex btn bg-primaryColor text-lg font-semibold rounded-full items-center space-x-2 invisible lg:visible">
+            <a class="hidden md:flex btn bg-primaryColor text-lg font-semibold rounded-full items-center space-x-2 invisible md:visible">
               <span>Book Consult</span>
               <i class="fa-solid fa-arrow-right -rotate-45 text-md bg-black text-white p-2 rounded-full"></i>
             </a>
@@ -79,10 +80,10 @@
             <!-- Mobile Dropdown Toggle -->
             <div class="dropdown">
               <div class="lg:hidden">
-                <div class="visible md:invisible" tabindex="0" role="button">
+                <div class="visible lg:invisible" tabindex="0" role="button">
                   <i class="fa-solid fa-bars bg-white p-3 rounded-full"></i>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-auto p-2 shadow">
+                <ul tabindex="0" class="menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-auto p-2 shadow-md overflow-hidden absolute right-1">
                   <li><a class="text-base">Home</a></li>
                   <li><a class="text-base">Services</a></li>
                   <li><a class="text-base">Portfolio</a></li>
@@ -327,14 +328,34 @@
   
                 <textarea name="" id="" cols="30" rows="5" placeholder="Write your Message Here" class="col-span-12 p-5 rounded-2xl"></textarea>
 
-                <button class="btn bg-primaryColor rounded-full px-4 py-1 font-bold text-center mb-3 w-full col-span-12">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 text-md bg-black text-white p-2 rounded-full"></i></button>
+                <button class="btn bg-primaryColor rounded-full px-4 py-1 font-bold text-center mb-3 w-full col-span-12 border-none">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 text-md bg-black text-white p-2 rounded-full"></i></button>
                </form>
              </div>
           </div>
          </section>
 
-        
     </main>
+
+    <footer class="bg-fColor py-20 ">
+      <div class="containern mx-auto w-3/6 md:w-auto">
+        <div class="flex flex-col items-center">
+          <h2 class="font-bold text-center mb-3 text-white text-3xl"><i class="fa-solid fa-arrow-right -rotate-45 bg-primaryColor p-1 rounded-full text-black mr-2"></i>Rinterio</h2>
+          <p class="mb-4 md:w-3/6 text-center text-gray-400">The barn house captivates with its blend of rustic charm and 
+            modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <div class="links text-gray-400 flex flex-col md:flex-row justify-center items-center gap-5 my-5">
+          <a href="">Home</a>
+          <a href="">Services</a>
+          <a href="">Portfolio</a>
+          <a href="">Blogs</a>
+          <a href="">Contact</a>
+        </div>
+        <div class="flex justify-center">
+          <button class="btn bg-primaryColor rounded-full px-4 py-1 font-extrabold text-center mt-5 border-none w-full md:w-auto">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 text-md bg-black text-white p-2 rounded-full"></i></button>
+        </div>
+      </div>
+    </footer>
     
 </body>
 </html>
